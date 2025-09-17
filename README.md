@@ -1,1 +1,1 @@
-# tracing-the-evolution-of-word-embedding-in-nlp
+# tracing-the-evolution-of-word-embeddings-in-nlp
