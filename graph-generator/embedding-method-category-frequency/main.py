@@ -11,6 +11,7 @@ print(f"Files will be saved to: {current_dir}")
 
 # --- Matplotlib Export as PNG (Category frequencies) ---
 category_series = df['Category'].value_counts()
+print(category_series)
 
 plt.figure(figsize=(8, 5))
 category_series.plot(kind='bar', color="mediumseagreen", edgecolor="black")

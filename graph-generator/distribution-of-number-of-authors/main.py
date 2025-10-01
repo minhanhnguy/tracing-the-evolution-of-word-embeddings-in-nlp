@@ -11,6 +11,7 @@ print(f"Files will be saved to: {current_dir}")
 
 # --- Distribution of Number of Authors ---
 author_dist = df['Number_Authors'].value_counts().sort_index()
+print(author_dist)
 
 plt.figure(figsize=(8, 5))
 author_dist.plot(kind='bar', color="mediumseagreen", edgecolor="black")
