@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NLP Embeddings – Coauthor Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+<body>
+  <header class="app-header">
+    <h1>Coauthor Graph — Word Embedding Literature</h1>
+    <div class="actions">
+      <div class="toolbar">
+        <button id="toggleClampBtn" class="tbtn" aria-pressed="true" title="Keep nodes inside the viewport">Clamp: On</button>
+
+        <div class="topn">
+          <label for="topNInput">Top&nbsp;N</label>
+          <input id="topNInput" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g., 25" />
+          <button id="applyTopNBtn" class="tbtn" title="Apply Top N filter">Apply</button>
+          <button id="resetTopNBtn" class="tbtn" title="Show all authors">Show all</button>
+        </div>
+      </div>
+
+      <button id="exportPngBtn" title="Export current view to PNG">Download PNG</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="graph-wrap">
+      <svg id="graph" aria-label="Coauthor network"></svg>
+      <div id="tooltip" class="tooltip" role="tooltip" style="opacity:0"></div>
+    </section>
+
+    <aside class="legend-panel">
+      <div class="legend-section">
+        <h2>Color Legend (Embedding Family)</h2>
+        <ul id="colorLegend" class="color-legend"></ul>
+      </div>
+      <div class="legend-section">
+        <h2>Node Number → Author</h2>
+        <div id="legendList" class="legend-list" aria-label="Author legend"></div>
+      </div>
+      <p class="hint">
+        Tip: drag nodes to adjust; scroll to zoom; hover for details.
+      </p>
+    </aside>
+  </main>
+
+  <footer class="app-footer">
+    Data path: <code>./data/papers.csv</code> (hardcoded in <code>main.js</code>)
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>

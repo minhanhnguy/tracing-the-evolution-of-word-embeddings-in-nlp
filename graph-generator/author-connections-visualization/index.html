@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Co-authorship Time-Arcs</title>
+
+  <!-- D3 v3 and PapaParse -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>Co-authorship Time-Arcs</h1>
+      <div id="controls">
+        <label>CSV File: <input type="file" id="fileInput" accept=".csv"></label>
+      </div>
+    </div>
+
+    <div id="chart-container">
+      <div class="timearcs-panel"></div>
+    </div>
+
+    <div id="tooltip"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
