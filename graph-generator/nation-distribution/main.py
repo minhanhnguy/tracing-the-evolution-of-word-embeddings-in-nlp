@@ -31,7 +31,7 @@ def print_top_k(counts: Counter, title: str, k: int = 20):
 
 
 def main():
-    file_name = "../../tracing-the-evolution-of-word-embeddings-in-nlp-first-affiliation.csv"
+    file_name = "../../tracing-the-evolution-of-word-embeddings-in-nlp.csv"
     distribution = get_country_distribution(file_name)
 
     # Top 20 nations + Others

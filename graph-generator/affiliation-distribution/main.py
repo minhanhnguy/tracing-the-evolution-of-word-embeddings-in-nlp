@@ -19,7 +19,7 @@ def get_affiliation_counts(file_path):
 
 
 def main():
-    file_name = "../../tracing-the-evolution-of-word-embeddings-in-nlp-first-affiliation.csv"
+    file_name = "../../tracing-the-evolution-of-word-embeddings-in-nlp.csv"
     counts = get_affiliation_counts(file_name)
 
     top_20 = counts.most_common(20)
