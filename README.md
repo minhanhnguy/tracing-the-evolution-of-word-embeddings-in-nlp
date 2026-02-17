@@ -40,29 +40,6 @@ Two CSV files are provided:
 | `Country_1` ... `Country_12` | Country of each affiliation |
 | `URL` | Link to the paper |
 
-## Repository Structure
-
-```
-.
-├── analysis/
-│   └── before-after-gpt3.ipynb   # Pre vs. Post GPT-3 era comparison (9 hypothesis tests)
-├── graph-generator/
-│   ├── affiliation-distribution/
-│   ├── author-connections-visualization/
-│   ├── distribution-of-number-of-authors/
-│   ├── embedding-method-category-frequency/
-│   ├── frequency-of-original-or-varient/
-│   ├── nation-distribution/
-│   ├── number-of-paper-published-per-year/
-│   ├── publication-type-frequency/
-│   ├── timeline-of-techniques/
-│   └── undirected-graph-for-authors/
-├── tracing-the-evolution-of-word-embeddings-in-nlp.csv                    # Primary dataset (first affiliation)
-├── tracing-the-evolution-of-word-embeddings-in-nlp-full-affiliation.csv   # All affiliations (alternative)
-├── requirements.txt
-└── LICENSE
-```
-
 ## Reproducing the Analysis
 
 ```bash
