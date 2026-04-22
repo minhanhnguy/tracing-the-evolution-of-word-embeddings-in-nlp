@@ -130,5 +130,5 @@ labels = ["Statistical", "Static Word Embeddings", "Contextual Word Embeddings",
 ax.legend(handles, labels, loc="lower left", bbox_to_anchor=(0.0, 0.02), ncol=1, frameon=True, fontsize=13, 
           fancybox=False, edgecolor='black', framealpha=1, borderpad=0.6)
 
-plt.savefig("/Users/minh/Documents/Word_Embedding_Techniques_in_NLP__MAIN__Dec26/timeline_techniques.png", dpi=300, bbox_inches='tight', pad_inches=0.05)
+plt.savefig("timeline_techniques.png", dpi=300, bbox_inches='tight', pad_inches=0.05)
 print("Timeline saved to timeline_techniques.png")

@@ -1,5 +1,6 @@
 import csv
 from collections import Counter
+import matplotlib.pyplot as plt
 
 def get_affiliation_counts(file_path):
     counts = Counter()
@@ -32,6 +33,21 @@ def main():
     others_total = sum(counts.values()) - sum(c for _, c in top_20)
     if others_total > 0:
         print(f"Others (all remaining): {others_total}")
+
+    # --- Plot ---
+    labels = [aff for aff, _ in top_20]
+    values = [count for _, count in top_20]
+
+    plt.figure(figsize=(10, 7))
+    plt.barh(labels[::-1], values[::-1], color="cornflowerblue", edgecolor="black")
+    plt.xlabel("Number of Authors")
+    plt.title("Top 20 Affiliations by Author Count")
+    plt.tight_layout()
+
+    png_filename = "affiliation_distribution.png"
+    plt.savefig(png_filename, dpi=300, bbox_inches="tight")
+    print(f"PNG chart saved as: {png_filename}")
+    plt.show()
 
 
 if __name__ == "__main__":

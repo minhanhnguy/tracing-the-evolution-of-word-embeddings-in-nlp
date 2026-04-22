@@ -7,9 +7,9 @@ This repository contains the curated dataset and analysis code accompanying the 
 
 ## Dataset
 
-The dataset comprises **149 manually annotated research articles** spanning **1954 to 2025**, each introducing or significantly extending a word embedding technique. The annotations enable systematic bibliometric analysis of how representation learning has evolved over seven decades.
+The dataset comprises **148 manually annotated research articles** spanning **1954 to 2025**, each introducing or significantly extending a word embedding technique. The annotations enable systematic bibliometric analysis of how representation learning has evolved over seven decades.
 
-All analyses in the paper use **first-listed affiliations only**: when an author reported multiple affiliations, only the primary (first-listed) institution was retained. This provides a consistent, conservative annotation rule across all 149 papers.
+All analyses in the paper use **first-listed affiliations only**: when an author reported multiple affiliations, only the primary (first-listed) institution was retained. This provides a consistent, conservative annotation rule across all 148 papers.
 
 Two CSV files are provided:
 
